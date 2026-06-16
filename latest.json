@@ -1,10 +1,10 @@
 {
   "version": "0.1.0",
-  "notes": "ScreenLex 0.1.0 macOS Apple Silicon 首个公开下载版本：本地影视英语学习库、Whisper 字幕、AI 精讲、双语字幕、断点续跑、复习标记和自动更新。",
-  "pub_date": "2026-06-15T21:45:41+08:00",
+  "notes": "ScreenLex 0.1.0 macOS Apple Silicon：加入匿名用户统计、全库去重词条统计、影视高级英语学习库、Whisper 字幕、AI 精讲、双语字幕、断点续跑、复习标记和自动更新。",
+  "pub_date": "2026-06-16T08:13:37.839Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajZtODgxYWRuZnFraXptcjR2K0haR1B2R0RwREplSzZQZ0ZPditRQ2lNdzRBaGY5dVpkRlhjQjk2YjBzR2xxS0FJdDVSVjRXdHh6ZC9yRWRuTFM5ZFFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNTMxMTI1CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKRlAxVThOVCtXSGtpQjljUEhHNWdUSTJqYWJYTGQ4SkdHWkR3ZmVLbGVYS1YxemRidmg2dExhQ0pPVTM2V0t5SWJBZldSR1ZienowRmlpYjIwNU1xQmc9PQo=",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajJQNFpPU09NZHFmb0hrbVVuaUtlNG11b1B0SXMvM2hZejFvS2pDVDZtNGprLzdoSmdDUWcyK1JUWlZTU0xjeWFtbHF1RlNNQjhGM0Rkd3M0RnlTbmdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNTk3NTM3CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKZ3VEaEhKMnNtcmdVOElkc2ZKRDZsVThmK3A5Q0hzZngxZCtuVGdmb3NjaHBHalc0Vkc3dzFtTkR6VllhUHUwK21VTmVoQlZYaUxYd1BzdXh0SWlhQXc9PQo=",
       "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.0/ScreenLex.app.tar.gz"
     }
   }
