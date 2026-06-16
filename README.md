@@ -6,11 +6,11 @@ ScreenLex 是黑粉科技 HyphenTech 出品的本地影视英语学习工具。
 
 ## 当前 macOS 版本
 
-请到本仓库的 [Releases](https://github.com/HackerChi-Hub/screenlex-download/releases) 下载最新版 macOS 安装包。
+请到本仓库根目录或 [Releases](https://github.com/HackerChi-Hub/screenlex-download/releases) 下载最新版 macOS 安装包。
 
 当前发布：
 
-- macOS Apple Silicon：`ScreenLex_0.1.0_aarch64.dmg`
+- macOS Apple Silicon：[ScreenLex_0.1.0_aarch64.dmg](./ScreenLex_0.1.0_aarch64.dmg)
 
 ## 主要功能
 
@@ -24,6 +24,7 @@ ScreenLex 是黑粉科技 HyphenTech 出品的本地影视英语学习工具。
 - 支持 AI 生成双语 ASS 字幕；
 - 字幕 AI 处理支持断点续跑；
 - 支持复习标记和生词本；
+- 支持匿名用户统计，默认开启，可在设置中关闭；
 - 支持软件内检查更新。
 
 ## 安装提示
@@ -52,4 +53,3 @@ ScreenLex 使用 Tauri updater 的签名更新机制。软件会从本仓库 Rel
 ## 源码说明
 
 ScreenLex 是闭源发布软件。本公开仓库仅用于下载安装包和发布说明，不包含源代码。
-
