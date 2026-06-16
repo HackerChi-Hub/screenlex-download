@@ -1,11 +1,11 @@
 {
-  "version": "0.1.1",
-  "notes": "ScreenLex 0.1.1：修复新视频字幕处理。会识别并移开重复占位坏 SRT，优先提取 MKV 内嵌英文字幕轨；没有可用内嵌字幕时才使用 Whisper。",
-  "pub_date": "2026-06-16T15:30:34.676Z",
+  "version": "0.1.2",
+  "notes": "ScreenLex 0.1.2：进一步修复 Whisper 新视频字幕生成。Whisper 前会先从视频显式抽取 0:a:0 音频为 16k mono WAV，避免 MKV 内嵌字幕轨导致重复 CastingWords 占位文本。",
+  "pub_date": "2026-06-16T15:35:41.895Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGais2R2c5UGZGbWJZQnA4N29wYVNwdVVQYkxqWFlKQTdmMmhsdVZ3U0ZYWDRWTzVWbldKL3prS2ZvMjdQS3ROKzV1cENPVFJiWmx1UmtKcTUvVElsL2dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNjIzODAxCWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKL3AyQ05wTWJqZDNtamM4ZXRhUGtMbVc3dVhUREVOWFZhZEVPQkJYeFFNVHAzd0EwSmUrSDg5UmwvOG92RVBtbGE3YXdsSE1VZmtaSmtZQVJscUpJQ3c9PQo=",
-      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.1/ScreenLex.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajdmZ1R0M0tjVEZXMXdCakpzUjBqSjRTOXppM2pYK1E0d3ZpU0tZVUVvS3c2K2xDTHRGWlZhZVR2ckZkK0xJbnRMSzhHUVZNQVV2VDMva2dnNVp5eWd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNjI0MTE4CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKRzZSb0szSVh4MGY3UVFsaHR1M1dxVmplaGZqdHVVcGFCOXc0OE9Qa2VYYTBiOCswQjJWcDNCTER4eU9DazhCRmsxT0xxUDUvUG9xQThJU2pRWFAxQmc9PQo=",
+      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.2/ScreenLex.app.tar.gz"
     }
   }
 }
