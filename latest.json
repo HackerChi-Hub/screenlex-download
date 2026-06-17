@@ -1,11 +1,11 @@
 {
-  "version": "0.1.5",
-  "notes": "ScreenLex 0.1.5：彻底加固本地 Whisper 字幕流程。处理前会隔离所有匹配的坏 SRT，已有可用字幕会直接跳过；优先提取内嵌英文字幕；Whisper 输出写入临时目录并通过质量检查后再发布，避免失败结果污染电影目录。",
-  "pub_date": "2026-06-17T00:41:28.000Z",
+  "version": "0.1.6",
+  "notes": "ScreenLex 0.1.6：新增单集「重跑字幕」入口。已生成字幕的视频可一键备份当前英文 SRT、清除本集旧学习包缓存，并按新版字幕流程重新生成，方便测试和修复单集字幕。",
+  "pub_date": "2026-06-17T00:53:07.000Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajRoaWxURlJMM1FhQ082VlA5MjlqRVJQWWh1bkMzK05yQ0ttY1ErZDdmbThyOWg4MWJ3b1Z2WkJZYzIzNmxVQUwzNityY3loVjQzZHdORXZ2emljdWdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNjU2ODU1CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKSUdXYnR1bVhZbitNaVZ2S0hUWHB3Q25ZdzVGTDNYY0dOcFQwb1JGUHFra3lDWGpLRmw0dmsvRm4xSG5nRjZYeG1Xb1pSTkM0OGkxNkZyRHFkZVhHQVE9PQo=",
-      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.5/ScreenLex.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGai93SkVscGlxa2hNUUloNUpVSER0STVaUVUxanpldFZKWFVDN1FrMjYzRWh0dzlRV2VlbExDV0VWU0hBdVhBVHlUTkI0MHpUZ2pOYk5WN2hVNlMyTUF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNjU3NTY4CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKL1pGQ1Q5OHVYbG5PNmxzZmJ0cWZsUVAzYkp1UUVnMzA5UVNreXBrSXNPWGVRMlVDUHNxSDNqcWNodEN5YmtIYWRzS0xuMjBHRFpBSDJQdXkxNW1RQnc9PQo=",
+      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.6/ScreenLex.app.tar.gz"
     }
   }
 }
