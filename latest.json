@@ -1,11 +1,11 @@
 {
-  "version": "0.1.3",
-  "notes": "ScreenLex 0.1.3：修复 Infuse 可识别但软件漏识别的短文件名外挂 SRT。现在完全同名 SRT 优先，也兼容字幕文件名是视频文件名前缀的情况，避免已有字幕仍被误判为缺失并触发 Whisper 批处理失败。",
-  "pub_date": "2026-06-17T00:14:59.996Z",
+  "version": "0.1.4",
+  "notes": "ScreenLex 0.1.4：增强坏字幕检测，能识别非水印但大量重复的异常 SRT，例如整集重复 Goodbye / No 等台词；The Terror S03 已重新提取内嵌英文字幕并可正常生成学习包。",
+  "pub_date": "2026-06-17T00:28:57.327Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajlUQnAyVHFoZUlXWjlwaWlrYWZRczRsczZxTzY1em53RGF2NDBoMnErbCtmYkRsNEU3amx6YkJpVGVrOG83QUJXNmxrb3BpMmJMdTNURGVTMHFkTmcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNjU1Mjc4CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKdFpUbFVxVjBma2k0ajRFV0xRR2wrZFlHemFrelgvaCtEY3VnVXIwSDlMcUFDb0RDZEdNclpPdDJNVzNYUTJXNFFXTzZCMDhWQjY3WVdaaVRXWEFLQVE9PQo=",
-      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.3/ScreenLex.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajg5TzJsUGJHL2VmNndhdFZjckZlZW1PS3JBNXBOZ1RjQ3krLzVVTVoreDhIelJENVhwY1IySTVHOUIzUUFQQTJJQmtVbTlScDdjYmdTZ3MzbDZ3RVEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNjU2MTE5CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKS2tXTUtpd3RPclNHUHZpY096d0RwR3A4cGlsOXF6YzJRUXJ3SWRrbkZaUjRxQTJMM05WMHNpNTFMYnZYSWIxS1FjQ2FacGlhMWdvdnpWSG9SVFFlQ3c9PQo=",
+      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.4/ScreenLex.app.tar.gz"
     }
   }
 }
