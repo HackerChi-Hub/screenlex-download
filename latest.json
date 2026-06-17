@@ -1,11 +1,11 @@
 {
-  "version": "0.1.2",
-  "notes": "ScreenLex 0.1.2：进一步修复 Whisper 新视频字幕生成。Whisper 前会先从视频显式抽取 0:a:0 音频为 16k mono WAV，避免 MKV 内嵌字幕轨导致重复 CastingWords 占位文本。",
-  "pub_date": "2026-06-16T15:35:41.895Z",
+  "version": "0.1.3",
+  "notes": "ScreenLex 0.1.3：修复 Infuse 可识别但软件漏识别的短文件名外挂 SRT。现在完全同名 SRT 优先，也兼容字幕文件名是视频文件名前缀的情况，避免已有字幕仍被误判为缺失并触发 Whisper 批处理失败。",
+  "pub_date": "2026-06-17T00:14:59.996Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajdmZ1R0M0tjVEZXMXdCakpzUjBqSjRTOXppM2pYK1E0d3ZpU0tZVUVvS3c2K2xDTHRGWlZhZVR2ckZkK0xJbnRMSzhHUVZNQVV2VDMva2dnNVp5eWd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNjI0MTE4CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKRzZSb0szSVh4MGY3UVFsaHR1M1dxVmplaGZqdHVVcGFCOXc0OE9Qa2VYYTBiOCswQjJWcDNCTER4eU9DazhCRmsxT0xxUDUvUG9xQThJU2pRWFAxQmc9PQo=",
-      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.2/ScreenLex.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajlUQnAyVHFoZUlXWjlwaWlrYWZRczRsczZxTzY1em53RGF2NDBoMnErbCtmYkRsNEU3amx6YkJpVGVrOG83QUJXNmxrb3BpMmJMdTNURGVTMHFkTmcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNjU1Mjc4CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKdFpUbFVxVjBma2k0ajRFV0xRR2wrZFlHemFrelgvaCtEY3VnVXIwSDlMcUFDb0RDZEdNclpPdDJNVzNYUTJXNFFXTzZCMDhWQjY3WVdaaVRXWEFLQVE9PQo=",
+      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.3/ScreenLex.app.tar.gz"
     }
   }
 }
