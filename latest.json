@@ -1,11 +1,11 @@
 {
-  "version": "0.1.6",
-  "notes": "ScreenLex 0.1.6：新增单集「重跑字幕」入口。已生成字幕的视频可一键备份当前英文 SRT、清除本集旧学习包缓存，并按新版字幕流程重新生成，方便测试和修复单集字幕。",
-  "pub_date": "2026-06-17T00:53:07.000Z",
+  "version": "0.1.7",
+  "notes": "ScreenLex 0.1.7：修复「重跑字幕」点击后无提示、无效果的问题。确认流程改为软件内弹层，不再依赖 WebView 原生 confirm；确认后会备份旧英文 SRT、清除本集缓存并重新生成字幕。",
+  "pub_date": "2026-06-17T01:07:46.000Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGai93SkVscGlxa2hNUUloNUpVSER0STVaUVUxanpldFZKWFVDN1FrMjYzRWh0dzlRV2VlbExDV0VWU0hBdVhBVHlUTkI0MHpUZ2pOYk5WN2hVNlMyTUF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNjU3NTY4CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKL1pGQ1Q5OHVYbG5PNmxzZmJ0cWZsUVAzYkp1UUVnMzA5UVNreXBrSXNPWGVRMlVDUHNxSDNqcWNodEN5YmtIYWRzS0xuMjBHRFpBSDJQdXkxNW1RQnc9PQo=",
-      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.6/ScreenLex.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajVFSnFRd1YwMEdHckpER3dpSmZibCtacWlRbGwveGU5dVhJcmxsZldYbDc1dkp2L3ZWVlk1dE1BU09GVkV0cXpjN0VKYUcrZDB5SU91YzBVbDJRYmdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNjU4NDMzCWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKYitpQ2thSTBjZWhwVjQ3dTdyTzE0Wm16bjBnY1lvVXdYTjZLTkpyTVE5N2tMeENYQVNpdnVpcnRZWkoxbExHWWtNMmxOaFlpa0sxWld6S3lEMW8rQXc9PQo=",
+      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.7/ScreenLex.app.tar.gz"
     }
   }
 }
