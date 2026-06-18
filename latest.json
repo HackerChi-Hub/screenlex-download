@@ -1,11 +1,11 @@
 {
-  "version": "0.1.10",
-  "notes": "ScreenLex 0.1.10：修复双语字幕生成失败的问题。此前翻译要求模型返回 JSON，台词里的引号常导致模型生成的 JSON 转义出错、整段乃至整集失败（表现为「已生成 0/N，失败 N 个」）。现改为「编号+换行」逐行格式，译文无需转义，从根上消除该问题；翻译/校对单段失败还会自动重试 3 次，并保留断点续传。",
-  "pub_date": "2026-06-18T14:08:02.000Z",
+  "version": "0.1.11",
+  "notes": "ScreenLex 0.1.11：新增手动字幕体检。快速体检检查字幕时间码、覆盖率、乱序、重叠、异常停留、阅读速度和英文比例；深度抽检会调用本地 Whisper，对影片前中后三段音频与原字幕进行内容和进度比对，并展示健康分、风险原因、抽检时间点和文本相似度。",
+  "pub_date": "2026-06-18T15:23:18.000Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajhpQmZBNDk4QUJMYkxoSlVsOGVpVFdNZjhYK0xRb1ZyNmhINEJKV1pBSUNMdllrZmsybnRUOURsaTUzYmhRUk4vR3FJOThDVTd1K0lMdUhRVmtOYlFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNzkxNjc2CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKTGwrbEs2WTdpcWltdW9Sd1VCT0V6V3hCQlNuMzI1ZUtRMG1aWWNDK3ZVYTJtSVhxV3dBQ1pWVHNCbmdSd2JHY2lLQnF5ZDlvcklLaXRMTGxIL1ZIQXc9PQo=",
-      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.10/ScreenLex.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajZhL3YveVRXanJBak93akVCMFdYTk9JU2Q5QS9wdGx3V05LYW9wSHZaOVhBVEVQOWo0REh3eE5XOE1LcGZoMWRHcFdiOGVIbkx4Sm5CcVlLcmhKTWd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNzk2MTcwCWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKVE9iN0Z5cnQ5T2tEVjErZmFZVUFXeTBLUWZDdDBBOFhTaWFIZ2gwcEdOcEZpYkxLcnp6cXlISTJuSTExNTVSV3BHTXUwa1dhRzBrS2l3ZzAwa1N5QkE9PQo=",
+      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.11/ScreenLex.app.tar.gz"
     }
   }
 }
