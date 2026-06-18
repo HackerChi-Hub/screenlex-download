@@ -1,11 +1,11 @@
 {
-  "version": "0.1.15",
-  "notes": "ScreenLex 0.1.15：增强朗读、跟读与听写。可在设置中选择系统英文音色与口音、调整语速和循环 1-3 次；词卡可分别朗读目标词和影片台词；主动复习新增听写模式，隐藏文字后播放目标词与例句，完成输入再揭晓答案。",
-  "pub_date": "2026-06-18T21:15:09.000Z",
+  "version": "0.1.17",
+  "notes": "ScreenLex 0.1.17：新增 SQLite 学习数据中心与逐句学习播放器。旧学习包、词库和复习记录会自动迁移，可备份与恢复；播放器支持 MKV/x265/DDP 兼容片段、双语字幕同步、点击时间点跳转、单句/A-B 循环、倍速、字幕偏移和播放进度恢复。",
+  "pub_date": "2026-06-18T22:01:51.000Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGai9GRUhZeDFLUGVJcWdSajBJemdIMDNVd0owN2I5WTR1VG1XSDczVG9Jd1Fhc2J2ejdYVTZlaVNOc1RUODFmb2VXeVVPdDhZalJkWTlrb1BxOHFNNVEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxODE3MjkzCWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKQjBKWHBVeWpoR2ZxVEU4dDU2VldOZS80QjVYZHlHaHY4YXZwWkdvakJIaWp3R1I0TXBCNHk1blR2ZGVZU2NHQXhmUHUveEtOVGY5OWVBeVE5VEhtQXc9PQo=",
-      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.15/ScreenLex.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajgyNElJT2htUFRrM2NPeVJjRGdRVm01aG5jYmh1bDFYZHFrVmdvaHl1akhBd3A0WTNPUlZBL0RVbU5BeW4xYXdUTFhkZFc5WENLS3VrR29oYmJtdWdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxODIwMDMzCWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKYlNBUVdYMDkvbTJmSGRhck9YdkVYSkI4djAwc0JuR2tETlFvWkp5UmQ0Szl2dmsycC9BcjFDNEdDbHlibCt2RWpuV0ZONlArMjgrUm9sZFZIYjc1QWc9PQo=",
+      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.17/ScreenLex.app.tar.gz"
     }
   }
 }
