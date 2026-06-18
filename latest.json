@@ -1,11 +1,11 @@
 {
-  "version": "0.1.14",
-  "notes": "ScreenLex 0.1.14：新增统一任务中心。批量字幕、校对、双语字幕、生词提取和 AI 精讲统一显示实时阶段、文件进度、百分比、完成结果与失败详情；支持取消当前批量任务、重试历史任务，并在软件异常退出后正确标记中断状态。",
-  "pub_date": "2026-06-18T21:06:08.000Z",
+  "version": "0.1.15",
+  "notes": "ScreenLex 0.1.15：增强朗读、跟读与听写。可在设置中选择系统英文音色与口音、调整语速和循环 1-3 次；词卡可分别朗读目标词和影片台词；主动复习新增听写模式，隐藏文字后播放目标词与例句，完成输入再揭晓答案。",
+  "pub_date": "2026-06-18T21:15:09.000Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajNUL0pJc1BxQ2sxV0plVnIrbk1YSVYrbHNZRDdONS9jZ2FLRXZINHNrNHhyZEQxVHFCdEQvVm45cHVhUjlwNGV3WktkSEF5a25GR29zbE5ZNCs1R1FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxODE2NzUxCWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKbU1vRWVNNG9pUHJETWt6VzZTZUV2UEZjZC9LTXFRd2VDbWt2YU9TOHBuZTNqaEwzVzc2c3JnNWd3SnluajJHcDJYSEltU2RnQTdkQ2ZUa21CRGFNRFE9PQo=",
-      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.14/ScreenLex.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGai9GRUhZeDFLUGVJcWdSajBJemdIMDNVd0owN2I5WTR1VG1XSDczVG9Jd1Fhc2J2ejdYVTZlaVNOc1RUODFmb2VXeVVPdDhZalJkWTlrb1BxOHFNNVEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxODE3MjkzCWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKQjBKWHBVeWpoR2ZxVEU4dDU2VldOZS80QjVYZHlHaHY4YXZwWkdvakJIaWp3R1I0TXBCNHk1blR2ZGVZU2NHQXhmUHUveEtOVGY5OWVBeVE5VEhtQXc9PQo=",
+      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.15/ScreenLex.app.tar.gz"
     }
   }
 }
