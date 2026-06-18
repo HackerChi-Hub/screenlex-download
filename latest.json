@@ -1,11 +1,11 @@
 {
-  "version": "0.1.9",
-  "notes": "ScreenLex 0.1.9：1) 修正「重跑字幕」语义——优先重新抽取片源内嵌英文字幕轨，无内嵌轨才用 Whisper，避免在有干净内嵌字幕的片源上退化成水印幻觉；2) 新增「强制 Whisper」按钮，给内嵌字幕是外语/错误的片源用；3) 重新生成时彻底清除旧的无用缓存（历史备份、无效/调试字幕、旧版残留文件，以及 app 数据目录的校对/翻译标记与续传进度），不再无限累积。",
-  "pub_date": "2026-06-18T13:00:18.000Z",
+  "version": "0.1.10",
+  "notes": "ScreenLex 0.1.10：修复双语字幕生成失败的问题。此前翻译要求模型返回 JSON，台词里的引号常导致模型生成的 JSON 转义出错、整段乃至整集失败（表现为「已生成 0/N，失败 N 个」）。现改为「编号+换行」逐行格式，译文无需转义，从根上消除该问题；翻译/校对单段失败还会自动重试 3 次，并保留断点续传。",
+  "pub_date": "2026-06-18T14:08:02.000Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajhhaHFFL0xzT1pOUGZvZnIxdTZWWjl0Zkh5b1ZpQUdIV0llYXZTTEpiWU9YamF3QU9VRktIaVZpYUNuNmk0dkJYTEdlSXJwcWJ4L1JCNHMwUmlndHdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNzg3NjEwCWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKdEtFVzFVdmhCRG03ZW5xNCtJdERDUGJzTFZ5QkpBRXlkOXBEcG8yMk41ZXg1ZmFCT3pRblVLU3pyL0tUa3F0Y05EdjNtYUZOVVpKcmo0Qm94SCtwRGc9PQo=",
-      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.9/ScreenLex.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajhpQmZBNDk4QUJMYkxoSlVsOGVpVFdNZjhYK0xRb1ZyNmhINEJKV1pBSUNMdllrZmsybnRUOURsaTUzYmhRUk4vR3FJOThDVTd1K0lMdUhRVmtOYlFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNzkxNjc2CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKTGwrbEs2WTdpcWltdW9Sd1VCT0V6V3hCQlNuMzI1ZUtRMG1aWWNDK3ZVYTJtSVhxV3dBQ1pWVHNCbmdSd2JHY2lLQnF5ZDlvcklLaXRMTGxIL1ZIQXc9PQo=",
+      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.10/ScreenLex.app.tar.gz"
     }
   }
 }
