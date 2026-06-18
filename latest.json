@@ -1,11 +1,11 @@
 {
-  "version": "0.1.11",
-  "notes": "ScreenLex 0.1.11：新增手动字幕体检。快速体检检查字幕时间码、覆盖率、乱序、重叠、异常停留、阅读速度和英文比例；深度抽检会调用本地 Whisper，对影片前中后三段音频与原字幕进行内容和进度比对，并展示健康分、风险原因、抽检时间点和文本相似度。",
-  "pub_date": "2026-06-18T15:23:18.000Z",
+  "version": "0.1.12",
+  "notes": "ScreenLex 0.1.12：复习升级为主动回忆会话。支持混合、英译中、中译英、例句挖空四种模式；先输入答案再揭晓词义、例句、词根、场景与记忆提示；按忘记、困难、正常、简单四档评分，自适应调整下次复习间隔并记录连续答对和遗忘次数。",
+  "pub_date": "2026-06-18T16:01:16.000Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajZhL3YveVRXanJBak93akVCMFdYTk9JU2Q5QS9wdGx3V05LYW9wSHZaOVhBVEVQOWo0REh3eE5XOE1LcGZoMWRHcFdiOGVIbkx4Sm5CcVlLcmhKTWd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNzk2MTcwCWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKVE9iN0Z5cnQ5T2tEVjErZmFZVUFXeTBLUWZDdDBBOFhTaWFIZ2gwcEdOcEZpYkxLcnp6cXlISTJuSTExNTVSV3BHTXUwa1dhRzBrS2l3ZzAwa1N5QkE9PQo=",
-      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.11/ScreenLex.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajlZQU5ZdlVIbUUycTROZm00WTd3ZkFJWmRKTVBYenJjc21hVVdtb3RUbXIzekp4UHpod012Rk1XMlhQRlpDM0dVYysxN08xRXl3Uzhtc1o1U3pLSlFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNzk4NDYwCWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKd2drT0FwVzFFajNwakRzN01HZTZsWnBrVWs2MDZpay8xbllkU3AvcURtbDl4K05qQ1pGUm16bDA4N2ZBU21IcVBQTTNWWUFOazJGbnZNVnZzSmUzRFE9PQo=",
+      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.12/ScreenLex.app.tar.gz"
     }
   }
 }
