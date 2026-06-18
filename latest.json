@@ -1,11 +1,11 @@
 {
-  "version": "0.1.12",
-  "notes": "ScreenLex 0.1.12：复习升级为主动回忆会话。支持混合、英译中、中译英、例句挖空四种模式；先输入答案再揭晓词义、例句、词根、场景与记忆提示；按忘记、困难、正常、简单四档评分，自适应调整下次复习间隔并记录连续答对和遗忘次数。",
-  "pub_date": "2026-06-18T16:01:16.000Z",
+  "version": "0.1.13",
+  "notes": "ScreenLex 0.1.13：深化学习内容。词汇和短语新增前后台词、全部出现位置与频次；AI 精讲新增本句义项、角色意图、易混辨析和主动回忆问题；可从真实台词发现高价值搭配，并生成带台词证据与时间点的文化背景笔记。旧学习包缓存会自动刷新。",
+  "pub_date": "2026-06-18T20:57:16.000Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajlZQU5ZdlVIbUUycTROZm00WTd3ZkFJWmRKTVBYenJjc21hVVdtb3RUbXIzekp4UHpod012Rk1XMlhQRlpDM0dVYysxN08xRXl3Uzhtc1o1U3pLSlFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNzk4NDYwCWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKd2drT0FwVzFFajNwakRzN01HZTZsWnBrVWs2MDZpay8xbllkU3AvcURtbDl4K05qQ1pGUm16bDA4N2ZBU21IcVBQTTNWWUFOazJGbnZNVnZzSmUzRFE9PQo=",
-      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.12/ScreenLex.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajFUbWZqNzZ0Z1hDSDNJTjlTT3Y3Z2xURlJmUC93RmZNM3VFZmNIWVc2My9VQzVWZHZqTTJFei9TRjJ3WC9sL3dEV2tDYmlqT1E2bldMRUlMMElQbEFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxODE2MjIwCWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKaDlrRkFjQTFEdUFTZWQ1OU1DY2F2Tndtc2N2VzhsYTVLNC9DcE9ZR3RtWTNoaHhTU2loWHp6WlJnTjZnNmExbmdWeUc2M3M0M1ZhWkpOeFZ4Z2t1QWc9PQo=",
+      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.13/ScreenLex.app.tar.gz"
     }
   }
 }
