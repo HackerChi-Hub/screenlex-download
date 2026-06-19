@@ -1,11 +1,11 @@
 {
-  "version": "0.1.18",
-  "notes": "ScreenLex 0.1.18：新增「原片直放（mpv）」原型——直接播放原始 MKV/x265/DDP 全片，VideoToolbox 硬件解码、libass 双语字幕、原生全屏，不再受 3 分钟兼容片段限制。in-app 字幕列表与 mpv 实时同步：点击逐句跳转、单句循环、倍速、音轨/字幕轨切换。原「片段播放器」保留作为回退。仅 macOS Apple Silicon，需本机安装 Homebrew mpv 运行时（brew install mpv）。",
-  "pub_date": "2026-06-19T11:39:36.000Z",
+  "version": "0.1.19",
+  "notes": "ScreenLex 0.1.19：完善「原片直放（mpv）」学习功能——词卡/背景知识时间戳一键跳转到原片对应时刻；新增 A–B 区间循环（mpv 原生 ab-loop）与单句循环互斥切换；自动记忆并续播上次进度。配合 0.1.18 的硬件解码、双语字幕、原生全屏与音轨/字幕轨切换，原片直放已可用于逐句精听。仅 macOS Apple Silicon，需本机安装 Homebrew mpv（brew install mpv）。",
+  "pub_date": "2026-06-19T11:50:24.000Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajA3dCtiUloxVXRuT1B3VlhtdTVlanBieFlhSXZTSFBsS2Q1VTllZ04vSkErdlU4NzgzenphK2Q5NDBLZmlWNFVrUS9aNGd6NG5WbUQyZGMzKzZmWWdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxODY5MTY5CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKWWFscHVuU0N6TXZmY096NUNkamh6WGsrTzNoa3Yra3pjZkxSN2hUcStGWWdtYkJjSldSZGZFdEdrdnZETjdyLzZ5TFRIYzdvMXNwRkdoYkJKclFDQ0E9PQo=",
-      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.18/ScreenLex.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajJBcWthV05BUFJxc0drU09Ua2JkdThMaGJ1UWp1SjNOMFU1b1crdnJkQ0VwVStvNWVBcEc5QUtYb3pjMG9vb052MWErMFpTeCtSRzY4SDIzNW5PK2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxODY5ODA5CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKa1hKMFUrdE5kUHo4NXF5TDNTeUg3amo3WDRhTW5FT29zbUhueTdKOFlXVTRtOTIxaGxoVFRZelNxMEM0UmkyNG84bXlqdU90c0V2VVhJanVSOWlzREE9PQo=",
+      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.19/ScreenLex.app.tar.gz"
     }
   }
 }
