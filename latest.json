@@ -1,11 +1,11 @@
 {
-  "version": "0.2.0",
-  "notes": "ScreenLex 0.2.0：新增首次启动运行环境向导，自动检测 FFmpeg、ffprobe、mpv、libmpv、MLX Whisper 与离线模型；支持一键配置、三档 Whisper 模型选择、实时安装日志，并把 Whisper 安装到 ScreenLex 私有环境。同步加入窗口内嵌播放的进程内 libmpv 解码与原生图层合成基础，独立 mpv 播放器继续作为稳定回退。仅支持 macOS Apple Silicon。",
-  "pub_date": "2026-06-19T23:21:10.000Z",
+  "version": "0.2.1",
+  "notes": "ScreenLex 0.2.1：新增黑粉科技官方关注入口。侧边栏可快速访问官网和 GitHub；设置页集中提供官网、GitHub、哔哩哔哩、YouTube、快手以及公众号/视频号搜索入口；首次环境配置完成页同步展示。外部网址经过应用白名单校验，微信搜索名称支持一键复制。仅支持 macOS Apple Silicon。",
+  "pub_date": "2026-06-19T23:46:20.000Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajAxQzk3cVZtT0o5VHlXUGFZL3FTREZHOTZGK3ljaDNoNGl5aDFNL09JN2pMSWwwaGtFWVJ6T2JLYUdVYWZQYm1OT21mVU9LaUVQK29nL05EUUU5SXc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxOTExMjU2CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKeXZVY3ltOUtXN1pORHNnUitBMzJrL3h4VlB5cnZQNzYrRFdkb0dwUm90QmMxc1dMSy8yd1JyaGNIdmFSbjNFTmFFaWVPYWlCSmh3dFJVUmNvcWhXQUE9PQo=",
-      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.2.0/ScreenLex.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGanhRV2l0RzhJeDhKcFViMXVwQ3hObWh3REhWL1NGUHlUcllKTmU1QWFjbTAzRVUyUkppeVVDN05SL3FObktvUG5KOEgxU0w5MDI4ZGdwczdoN05wU3drPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxOTEyNzY0CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKY3VvS3FuYmJ5Yy9Qc1RtZXo0ZUJVM0pYemgvYVF0clBxTmZ0TmhQbkoxcXRMTXcwZS9pNWxxWFVVb3R3NXVtT2xHUmVHeW13OVRiNnVpTW5OUEVFRFE9PQo=",
+      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.2.1/ScreenLex.app.tar.gz"
     }
   }
 }
