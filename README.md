@@ -10,7 +10,7 @@ ScreenLex 是黑粉科技 HyphenTech 出品的本地影视英语学习工具。
 
 当前发布：
 
-- macOS Apple Silicon：[ScreenLex_0.1.17_aarch64.dmg](./ScreenLex_0.1.17_aarch64.dmg)
+- macOS Apple Silicon：[ScreenLex_0.2.0_aarch64.dmg](./ScreenLex_0.2.0_aarch64.dmg)
 
 ## 主要功能
 
@@ -21,6 +21,7 @@ ScreenLex 是黑粉科技 HyphenTech 出品的本地影视英语学习工具。
 - 支持 AI 精讲，补充例句、翻译、词根和记忆方法；
 - 支持前后台词、出现位置、语境义项、易混辨析和带台词证据的文化笔记；
 - 支持本地 Whisper 生成英文字幕；
+- 首次启动自动检测 FFmpeg、mpv、libmpv、MLX Whisper 和离线模型，支持一键配置与模型选择；
 - 支持字幕快速体检和本地 Whisper 音频深度抽检；
 - 支持 AI 校对英文字幕；
 - 支持 AI 生成双语 ASS 字幕；

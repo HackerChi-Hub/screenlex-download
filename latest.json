@@ -1,11 +1,11 @@
 {
-  "version": "0.1.19",
-  "notes": "ScreenLex 0.1.19：完善「原片直放（mpv）」学习功能——词卡/背景知识时间戳一键跳转到原片对应时刻；新增 A–B 区间循环（mpv 原生 ab-loop）与单句循环互斥切换；自动记忆并续播上次进度。配合 0.1.18 的硬件解码、双语字幕、原生全屏与音轨/字幕轨切换，原片直放已可用于逐句精听。仅 macOS Apple Silicon，需本机安装 Homebrew mpv（brew install mpv）。",
-  "pub_date": "2026-06-19T11:50:24.000Z",
+  "version": "0.2.0",
+  "notes": "ScreenLex 0.2.0：新增首次启动运行环境向导，自动检测 FFmpeg、ffprobe、mpv、libmpv、MLX Whisper 与离线模型；支持一键配置、三档 Whisper 模型选择、实时安装日志，并把 Whisper 安装到 ScreenLex 私有环境。同步加入窗口内嵌播放的进程内 libmpv 解码与原生图层合成基础，独立 mpv 播放器继续作为稳定回退。仅支持 macOS Apple Silicon。",
+  "pub_date": "2026-06-19T23:21:10.000Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajJBcWthV05BUFJxc0drU09Ua2JkdThMaGJ1UWp1SjNOMFU1b1crdnJkQ0VwVStvNWVBcEc5QUtYb3pjMG9vb052MWErMFpTeCtSRzY4SDIzNW5PK2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxODY5ODA5CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKa1hKMFUrdE5kUHo4NXF5TDNTeUg3amo3WDRhTW5FT29zbUhueTdKOFlXVTRtOTIxaGxoVFRZelNxMEM0UmkyNG84bXlqdU90c0V2VVhJanVSOWlzREE9PQo=",
-      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.1.19/ScreenLex.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajAxQzk3cVZtT0o5VHlXUGFZL3FTREZHOTZGK3ljaDNoNGl5aDFNL09JN2pMSWwwaGtFWVJ6T2JLYUdVYWZQYm1OT21mVU9LaUVQK29nL05EUUU5SXc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxOTExMjU2CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKeXZVY3ltOUtXN1pORHNnUitBMzJrL3h4VlB5cnZQNzYrRFdkb0dwUm90QmMxc1dMSy8yd1JyaGNIdmFSbjNFTmFFaWVPYWlCSmh3dFJVUmNvcWhXQUE9PQo=",
+      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.2.0/ScreenLex.app.tar.gz"
     }
   }
 }
