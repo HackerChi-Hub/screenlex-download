@@ -1,11 +1,11 @@
 {
-  "version": "0.2.1",
-  "notes": "ScreenLex 0.2.1：新增黑粉科技官方关注入口。侧边栏可快速访问官网和 GitHub；设置页集中提供官网、GitHub、哔哩哔哩、YouTube、快手以及公众号/视频号搜索入口；首次环境配置完成页同步展示。外部网址经过应用白名单校验，微信搜索名称支持一键复制。仅支持 macOS Apple Silicon。",
-  "pub_date": "2026-06-19T23:46:20.000Z",
+  "version": "0.2.2",
+  "notes": "ScreenLex 0.2.2：自动更新成功后立刻补报版本到用户统计，版本分布不再滞后到下次启动。仅支持 macOS Apple Silicon。",
+  "pub_date": "2026-06-21T03:57:37.000Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGanhRV2l0RzhJeDhKcFViMXVwQ3hObWh3REhWL1NGUHlUcllKTmU1QWFjbTAzRVUyUkppeVVDN05SL3FObktvUG5KOEgxU0w5MDI4ZGdwczdoN05wU3drPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxOTEyNzY0CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKY3VvS3FuYmJ5Yy9Qc1RtZXo0ZUJVM0pYemgvYVF0clBxTmZ0TmhQbkoxcXRMTXcwZS9pNWxxWFVVb3R3NXVtT2xHUmVHeW13OVRiNnVpTW5OUEVFRFE9PQo=",
-      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.2.1/ScreenLex.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGai8xWlFUTzhiYkVhNWZYK1ZvUVdyeFI4eUVTWXZnbXJTWXdCSjQ3aWpNRXYwcDV6c004VTZZd1VDa2wwMkp6dDE1V1dwYXhXWkJCR0I2VHYyMUhCeWdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDEzOTI1CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKQXJXZkFVV21BMlM4TCtzbytsZkE5U1RtbkxrVVV3MVM4MHZON2lOKzBhQThob1JuSW5aOTJnMGRVbis1VmhQdDBaV2I0Qms0NTdtbmlrTkExWXkrQnc9PQo=",
+      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.2.2/ScreenLex.app.tar.gz"
     }
   }
 }
