@@ -1,11 +1,11 @@
 {
-  "version": "0.2.3",
-  "notes": "ScreenLex 0.2.3：① 生词默认按台词在片中出现的先后排序，设置里可切换为按重要程度（已有学习包也立即重排，无需重新生成）。② 大幅提升 AI 记忆法与词源质量：词源只在真实可靠时给出、不再编造，记忆法按词自适应（词根/搭配/辨析/联想/场景），步骤因词而异不再套模板；卡片新增「记忆法类型」标签。仅 macOS Apple Silicon。",
-  "pub_date": "2026-06-21T07:39:23.000Z",
+  "version": "0.2.4",
+  "notes": "ScreenLex 0.2.4：修复部分新下载视频「字幕生成无效果」。现在能识别 MP4 容器里的 mov_text 内嵌英文字幕轨（很多 4K/HEVC mp4 片源用这种），优先直接抽取、不再误跑 Whisper；抽取时会清除 <font>/<i> 等标记，字幕和生词更干净。仅 macOS Apple Silicon。",
+  "pub_date": "2026-06-21T12:37:54.000Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajdKZDZ1NHJqdVpPbzVQUWFYREhjK09yNFVRNXFGanJMOWVXR0NpSG42a2lnNU9BZjNVVmd3T0FYRXgzZUg5WVlzL2U3Y1ZpRS9COG9yck9icVg1dmdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDI3NTQ4CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKd000eXg5citUSFZiS1daNU9ZdWNZTXg0dUJBS2FtK2ZabGJ3Z2JOM0M4Unl4TkhZaUF0VXpMVGZTeW1DUkRjWm9Ed3hDTWZRREk4RWsrS214MHdOQkE9PQo=",
-      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.2.3/ScreenLex.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTBiU2RnOXNGajI2ZEJENUE3VmxJZVBZNm9Cenl4b291bVVmMCtIT00zSTNyb0JSaE1uQmNHWG9yUlFDUk53R0IrT1RhWSszTkk2a1BhekNWWnVhWFVQcGI2SVIwNndjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDQ1NDY3CWZpbGU6U2NyZWVuTGV4LmFwcC50YXIuZ3oKSXNBRVM0M1RndFVINHNxQjZRUkFNZkY5RE93clBDdlgyM01ZbmtKdEpRcnZwcG5Xb2pMaThiemNpN0hPY2tXcUY3NlYvRnhSYlhqdS9aRnNyZkFRRHc9PQo=",
+      "url": "https://github.com/HackerChi-Hub/screenlex-download/releases/download/v0.2.4/ScreenLex.app.tar.gz"
     }
   }
 }
