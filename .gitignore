@@ -1,0 +1,6 @@
+# Release artifacts are published as GitHub Release assets, not committed to the repo tree.
+*.dmg
+*.tar.gz
+*.sig
+latest.json
+.DS_Store

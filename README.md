@@ -1,63 +1,40 @@
 # ScreenLex 光影词库
 
-ScreenLex 是黑粉科技 HyphenTech 出品的本地影视英语学习工具。
+ScreenLex 是黑粉科技 HyphenTech 出品的 macOS 本地影视英语学习工具：把你本机已有的电影 / 剧集字幕，离线整理成按考试分级的高级英语词库，并配套逐句学习播放器与主动回忆复习。
 
-它不提供电影、不分发字幕资源。内置播放器只服务逐句学习，不替代 Infuse 的影音库和完整观影体验；ScreenLex 负责把你本机已有视频与字幕组织成英语学习材料。
+> 它不提供电影、不分发字幕资源；内置播放器只服务逐句学习，不替代完整观影体验。仅支持 macOS Apple Silicon。
 
-## 当前 macOS 版本
+## 下载
 
-请到本仓库根目录或 [Releases](https://github.com/HackerChi-Hub/screenlex-download/releases) 下载最新版 macOS 安装包。
+前往 **[Releases](https://github.com/HackerChi-Hub/screenlex-download/releases/latest)** 下载最新版 macOS 安装包（`.dmg`）。软件内「检查更新」也会自动获取并安装新版本。
 
-当前发布：
+## 截图
 
-- macOS Apple Silicon：[ScreenLex_0.2.0_aarch64.dmg](./ScreenLex_0.2.0_aarch64.dmg)
+![工作台总览](screenshots/overview.png)
+
+![分级词库与词卡](screenshots/vocab-cards.png)
+
+![侧边栏与批量处理](screenshots/sidebar-batch.png)
 
 ## 主要功能
 
-- 扫描本地电影/剧集目录；
-- 识别英文 SRT 和 Infuse 双语 ASS；
-- 本地提取高级词汇、短语、中文释义和考试分级；
-- 支持高考、四级、六级、考研、专四、专八、雅思、托福、GRE 等分类；
-- 支持 AI 精讲，补充例句、翻译、词根和记忆方法；
-- 支持前后台词、出现位置、语境义项、易混辨析和带台词证据的文化笔记；
-- 支持本地 Whisper 生成英文字幕；
-- 首次启动自动检测 FFmpeg、mpv、libmpv、MLX Whisper 和离线模型，支持一键配置与模型选择；
-- 支持字幕快速体检和本地 Whisper 音频深度抽检；
-- 支持 AI 校对英文字幕；
-- 支持 AI 生成双语 ASS 字幕；
-- 字幕 AI 处理支持断点续跑；
-- 统一任务中心支持进度、取消、失败详情、历史和重试；
-- 支持复习标记和生词本；
-- 支持主动回忆、例句挖空、四档评分和自适应复习间隔；
-- 支持英文音色、语速、循环朗读、影片台词跟读和听写复习；
-- SQLite 数据中心统一保存学习包、词库、复习记录和偏好，支持备份与恢复；
-- 内置逐句学习播放器，支持 MKV/x265/DDP、双语字幕同步、时间点跳转、单句与 A-B 循环、倍速、字幕偏移和进度恢复；
-- 支持匿名用户统计，默认开启，可在设置中关闭；
-- 支持软件内检查更新。
+- 扫描本地电影 / 剧集，识别英文 SRT 与双语 ASS 字幕；
+- 离线提取高级词汇、短语与中文释义，按高考 / 四六级 / 考研 / 雅思 / 托福 / GRE 分级；
+- 可选 AI 精讲：例句、词源、记忆法、易混辨析、文化背景；
+- 主动回忆复习 + 自适应间隔；朗读、跟读、听写；
+- 逐句学习播放器：双语字幕、单句 / A-B 循环、倍速、时间点跳转；
+- 本地 Whisper 补字幕、AI 校对、生成双语字幕、字幕体检；
+- 纯本地运行，不上传、不分发任何片源或字幕。
 
 ## 安装提示
 
-当前版本尚未进行 Apple Developer ID 签名和 notarization。
+当前版本尚未进行 Apple Developer ID 签名与公证。若提示「无法验证开发者」：右键点 `ScreenLex.app` →「打开」，或在「系统设置 → 隐私与安全性」中允许打开。
 
-如果 macOS 提示“无法验证开发者”：
-
-1. 在 Finder 中找到 `ScreenLex.app`；
-2. 右键点击，选择“打开”；
-3. 或进入“系统设置 → 隐私与安全性”，允许打开该应用。
-
-后续版本会补充正式签名和公证流程。
-
-## 自动更新
-
-ScreenLex 使用 Tauri updater 的签名更新机制。软件会从本仓库 Release 中读取 `latest.json`，并校验更新包签名后安装。
-
-## 法律与免责声明
-
-下载和使用前请阅读：
+## 法律
 
 - [用户协议](./USER_AGREEMENT.md)
 - [免责声明](./DISCLAIMER.md)
 
-## 源码说明
+## 说明
 
-ScreenLex 是闭源发布软件。本公开仓库仅用于下载安装包和发布说明，不包含源代码。
+ScreenLex 为闭源发布软件。本公开仓库仅用于发布安装包与说明，不包含源代码。
