@@ -4,3 +4,5 @@
 *.sig
 latest.json
 .DS_Store
+*.exe
+*.msi
