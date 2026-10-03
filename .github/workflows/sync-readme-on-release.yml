@@ -1,0 +1,99 @@
+name: 同步 GitHub README
+
+on:
+  release:
+    types: [published, edited]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 指定 Release 标签；留空时使用最新正式版
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: screenlex-readme-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: 从 Release 生成公开主页
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检出公开下载库
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 选择要同步的 Release
+        id: release
+        env:
+          EVENT_TAG: ${{ github.event.release.tag_name }}
+          INPUT_TAG: ${{ inputs.tag }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="${INPUT_TAG:-${EVENT_TAG:-}}"
+          if [ -z "$tag" ]; then
+            tag="$(gh api "repos/${GITHUB_REPOSITORY}/releases/latest" --jq .tag_name)"
+          fi
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+
+      - name: 读取 Release 资产与更新清单
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.release.outputs.tag }}
+        run: |
+          mkdir -p .readme-sync
+          gh release view "$TAG" --json tagName,body,assets,url > .readme-sync/release.json
+          gh release download "$TAG" --pattern latest.json --dir .readme-sync
+
+      - name: 生成 README
+        run: |
+          node scripts/render-readme.mjs \
+            --release-json .readme-sync/release.json \
+            --latest-json .readme-sync/latest.json \
+            --template README.template.md \
+            --output README.md \
+            --repo "$GITHUB_REPOSITORY"
+
+      - name: 校验生成结果
+        env:
+          TAG: ${{ steps.release.outputs.tag }}
+        run: |
+          version="${TAG#v}"
+          test -s README.md
+          grep -F "当前最新版：v${version}" README.md
+          grep -F "/releases/download/${TAG}/" README.md
+          if grep -Eq '\{\{[A-Z_]+\}\}' README.md; then
+            echo "README 仍含未替换模板变量" >&2
+            exit 1
+          fi
+          git diff --check
+
+      - name: 提交并推送 README
+        env:
+          TAG: ${{ steps.release.outputs.tag }}
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "README 已与 ${TAG} 一致，无需提交"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "docs: 同步 ${TAG} GitHub 主页"
+          git push
+
+      - name: 回读远端 README
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.release.outputs.tag }}
+        run: |
+          version="${TAG#v}"
+          gh api "repos/${GITHUB_REPOSITORY}/contents/README.md?ref=${GITHUB_REF_NAME}" \
+            --jq .content | base64 --decode > .readme-sync/remote-README.md
+          grep -F "当前最新版：v${version}" .readme-sync/remote-README.md
+          grep -F "/releases/download/${TAG}/" .readme-sync/remote-README.md

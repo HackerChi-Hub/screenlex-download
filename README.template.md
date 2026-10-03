@@ -9,23 +9,19 @@
 
 ScreenLex 是黑粉科技 HyphenTech 出品的本地影视英语学习工具。它会扫描你自己的影视目录，识别英文或双语字幕，离线提取值得学习的单词、短语和真实语境，再配合逐句播放器、主动回忆与间隔复习完成学习闭环。
 
-**当前最新版：v1.0.5 · 支持 macOS Apple Silicon、Windows x64、Linux x64**
+**当前最新版：v{{VERSION}} · 支持 {{SUPPORTED_PLATFORMS}}**
 
 [官方网站](https://hyphentech.top) · [下载最新版](https://github.com/HackerChi-Hub/screenlex-download/releases/latest) · [B 站演示](https://www.bilibili.com/video/BV1HgjU6UEe8/) · [关注黑粉科技](https://space.bilibili.com/1846717524)
 
-![ScreenLex v1.0.5 工作台](screenshots/overview.png)
+![ScreenLex v{{VERSION}} 工作台](screenshots/overview.png)
 
 ## 下载
 
-推荐前往 **[Latest Release](https://github.com/HackerChi-Hub/screenlex-download/releases/latest)** 下载。下面是当前 `v1.0.5` 的直接入口：
+推荐前往 **[Latest Release](https://github.com/HackerChi-Hub/screenlex-download/releases/latest)** 下载。下面是当前 `v{{VERSION}}` 的直接入口：
 
-| 系统 | 推荐安装包 | 其他格式 | 适用设备 |
-| --- | --- | --- | --- |
-| **macOS** | [下载 DMG](https://github.com/HackerChi-Hub/screenlex-download/releases/download/v1.0.5/ScreenLex_1.0.5_aarch64.dmg) | — | Apple Silicon：M1 / M2 / M3 / M4 / M5 |
-| **Windows** | [下载 EXE 安装程序](https://github.com/HackerChi-Hub/screenlex-download/releases/download/v1.0.5/ScreenLex_1.0.5_x64-setup.exe) | [MSI](https://github.com/HackerChi-Hub/screenlex-download/releases/download/v1.0.5/ScreenLex_1.0.5_x64_en-US.msi) | Windows 10 / 11，x64 |
-| **Linux** | [下载 AppImage](https://github.com/HackerChi-Hub/screenlex-download/releases/download/v1.0.5/ScreenLex_1.0.5_amd64.AppImage) | [DEB](https://github.com/HackerChi-Hub/screenlex-download/releases/download/v1.0.5/ScreenLex_1.0.5_amd64.deb) · [RPM](https://github.com/HackerChi-Hub/screenlex-download/releases/download/v1.0.5/ScreenLex-1.0.5-1.x86_64.rpm) | Linux x64 |
+{{DOWNLOAD_TABLE}}
 
-软件内的「检查更新」支持 macOS、Windows、Linux AppImage。Linux 用户首次仍需手动安装一次。
+{{UPDATER_SENTENCE}}
 
 ## 从安装到开始使用
 
@@ -72,24 +68,19 @@ ScreenLex 是黑粉科技 HyphenTech 出品的本地影视英语学习工具。�
 
 ### 高级词汇工作台
 
-![ScreenLex v1.0.5 高级词汇与词卡](screenshots/vocab-cards.png)
+![ScreenLex v{{VERSION}} 高级词汇与词卡](screenshots/vocab-cards.png)
 
 ### 系列与视频选择器
 
-![ScreenLex v1.0.5 系列与视频选择器](screenshots/sidebar-batch.png)
+![ScreenLex v{{VERSION}} 系列与视频选择器](screenshots/sidebar-batch.png)
 
-## v1.0.5 更新
+## v{{VERSION}} 更新
 
-- 侧边栏新增赞助入口，点开是一张二维码，不打扰、不弹窗、不影响任何功能。
-- 首次提供 Linux x64 版本（AppImage / deb / rpm）。
+{{RELEASE_NOTES}}
 
 ## 平台差异
 
-| 能力 | 本地语音识别 | 安装格式 | 自动更新 |
-| --- | --- | --- | --- |
-| macOS | MLX Whisper，Apple Silicon 加速 | DMG | 支持 |
-| Windows | whisper.cpp；NVIDIA 自动使用 CUDA/cuBLAS，其余硬件使用 CPU | EXE / MSI | 支持 |
-| Linux | whisper.cpp / 本地运行环境 | AppImage / DEB / RPM | AppImage 支持 |
+{{PLATFORM_TABLE}}
 
 ## 安装提示
 
@@ -108,13 +99,7 @@ ScreenLex 是黑粉科技 HyphenTech 出品的本地影视英语学习工具。�
 
 如果 SmartScreen 显示「Windows 已保护你的电脑」，点击「更多信息」→「仍要运行」。
 
-### Linux
-
-AppImage 首次运行前可能需要添加执行权限：
-
-```bash
-chmod +x ScreenLex_1.0.5_amd64.AppImage
-```
+{{LINUX_INSTALL_HINT}}
 
 ## 隐私与版权边界
 
