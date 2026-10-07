@@ -52,12 +52,17 @@ jobs:
 
       - name: 生成 README
         run: |
-          node scripts/render-readme.mjs \
-            --release-json .readme-sync/release.json \
-            --latest-json .readme-sync/latest.json \
-            --template README.template.md \
-            --output README.md \
-            --repo "$GITHUB_REPOSITORY"
+          for language in zh-CN zh-TW en; do
+            suffix=".$language"
+            if [ "$language" = zh-CN ]; then suffix=""; fi
+            node scripts/render-readme.mjs \
+              --release-json .readme-sync/release.json \
+              --latest-json .readme-sync/latest.json \
+              --template "README${suffix}.template.md" \
+              --output "README${suffix}.md" \
+              --language "$language" \
+              --repo "$GITHUB_REPOSITORY"
+          done
 
       - name: 校验生成结果
         env:
@@ -66,24 +71,28 @@ jobs:
           version="${TAG#v}"
           test -s README.md
           grep -F "当前最新版：v${version}" README.md
-          grep -F "/releases/download/${TAG}/" README.md
-          if grep -Eq '\{\{[A-Z_]+\}\}' README.md; then
-            echo "README 仍含未替换模板变量" >&2
-            exit 1
-          fi
+          for file in README.md README.zh-TW.md README.en.md; do
+            test -s "$file"
+            grep -F "/releases/download/${TAG}/" "$file"
+            if grep -Eq '\{\{[A-Z_]+\}\}' "$file"; then
+              echo "$file 仍含未替换模板变量" >&2
+              exit 1
+            fi
+          done
+          node scripts/readme-contract.mjs
           git diff --check
 
       - name: 提交并推送 README
         env:
           TAG: ${{ steps.release.outputs.tag }}
         run: |
-          if git diff --quiet -- README.md; then
+          if git diff --quiet -- README.md README.zh-TW.md README.en.md; then
             echo "README 已与 ${TAG} 一致，无需提交"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md
+          git add README.md README.zh-TW.md README.en.md
           git commit -m "docs: 同步 ${TAG} GitHub 主页"
           git push
 
@@ -92,8 +101,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ steps.release.outputs.tag }}
         run: |
-          version="${TAG#v}"
-          gh api "repos/${GITHUB_REPOSITORY}/contents/README.md?ref=${GITHUB_REF_NAME}" \
-            --jq .content | base64 --decode > .readme-sync/remote-README.md
-          grep -F "当前最新版：v${version}" .readme-sync/remote-README.md
-          grep -F "/releases/download/${TAG}/" .readme-sync/remote-README.md
+          for file in README.md README.zh-TW.md README.en.md; do
+            gh api "repos/${GITHUB_REPOSITORY}/contents/${file}?ref=${GITHUB_REF_NAME}" \
+              --jq .content | base64 --decode > ".readme-sync/remote-${file}"
+            cmp "$file" ".readme-sync/remote-${file}"
+          done

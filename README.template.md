@@ -1,14 +1,31 @@
 <!-- evergreen:intro:start -->
+![ScreenLex · HyphenTech](screenshots/readme-hero.svg)
+
 # 光影词库 ScreenLex · 看电影学英语、本地字幕查词与间隔复习
 
 **把本机电影、剧集和字幕，变成能播放原句、检索词汇、安排复习的英语学习系统。**
 
 光影词库是黑粉科技开发的本地影视英语学习工具，面向美剧英语、电影英语和考试词汇学习。扫描自己的影视目录，识别英文或双语字幕，离线提取单词、短语和真实语境；用逐句播放、单句循环、主动回忆与间隔复习，把看过的表达留下来。支持 macOS、Windows 与 Linux，安装包以下载表为准。
 
-[**立即下载光影词库**](https://github.com/HackerChi-Hub/screenlex-download/releases/latest) · [B 站实际演示](https://www.bilibili.com/video/BV1HgjU6UEe8/) · [黑粉科技官网](https://hyphentech.top) · [反馈问题](https://github.com/HackerChi-Hub/screenlex-download/issues)
+
+<p align="center"><a href="README.md">简体中文</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.en.md">English</a></p>
+
+<p align="center"><a href="https://github.com/HackerChi-Hub/screenlex-download/releases/latest"><img alt="立即下载" src="https://img.shields.io/badge/立即下载-18181b?style=for-the-badge&amp;logo=github" /></a> <a href="https://hyphentech.top"><img alt="官网" src="https://img.shields.io/badge/官网-334155?style=for-the-badge" /></a></p>
 <!-- evergreen:intro:end -->
 
 {{RELEASE_NOTES}}
+
+<!-- evergreen:demos:start -->
+## ▶ 使用演示
+
+**用本地电影与字幕建立英语词库、播放原句和复习**
+
+| Bilibili | YouTube |
+| :---: | :---: |
+| [![B 站观看](https://img.shields.io/badge/Bilibili-00a1d6?style=for-the-badge&logo=bilibili&logoColor=white)](https://www.bilibili.com/video/BV1HgjU6UEe8/) | [![YouTube 观看](https://img.shields.io/badge/YouTube-ff0033?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=5ivpXKXqECg) |
+
+视频演示的是拍摄时的版本；安装包与当前功能以本页正式发行信息为准。视频为中文讲解。
+<!-- evergreen:demos:end -->
 
 **当前最新版：v{{VERSION}} · 支持 {{SUPPORTED_PLATFORMS}}**
 
@@ -100,9 +117,11 @@
 
 {{LINUX_INSTALL_HINT}}
 
+<!-- evergreen:privacy:start -->
 ## 隐私与版权边界
 
 ScreenLex 不提供电影，不分发字幕资源，也不会上传你的片源或字幕。播放器与字幕工具只服务于个人本地学习，不替代完整观影软件，也不用于导出或传播版权内容。
+<!-- evergreen:privacy:end -->
 
 ## 关注黑粉科技
 
@@ -112,12 +131,14 @@ ScreenLex 不提供电影，不分发字幕资源，也不会上传你的片源�
 - YouTube：[@hyphentech_top](https://www.youtube.com/@hyphentech_top)
 - 公众号 / 视频号：微信搜索「黑粉科技」
 
+<!-- evergreen:legal:start -->
 ## 法律与仓库说明
 
 - [用户协议](./USER_AGREEMENT.md)
 - [免责声明](./DISCLAIMER.md)
 
 ScreenLex 为闭源发布软件。本公开仓库只用于发布安装包、更新清单和使用说明，不包含应用源代码。
+<!-- evergreen:legal:end -->
 
 <!-- evergreen:use-cases:start -->
 ## 适合怎样的学习方式

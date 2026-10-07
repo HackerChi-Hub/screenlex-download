@@ -69,6 +69,17 @@ const latestFile = required(args, "latest-json");
 const templateFile = required(args, "template");
 const outputFile = required(args, "output");
 const repo = args.repo || process.env.GITHUB_REPOSITORY || "HackerChi-Hub/screenlex-download";
+const language = args.language || "zh-CN";
+const readmeName = language === "zh-CN" ? "README.md" : `README.${language}.md`;
+if (!["zh-CN", "zh-TW", "en"].includes(language)) throw new Error("不支持的主页语言");
+const vocabulary = {
+  "zh-TW": {"下载":"下載", "安装程序":"安裝程式", "系统":"系統", "推荐安装包":"建議安裝套件", "其他格式":"其他格式", "适用设备":"適用裝置", "能力":"能力", "本地语音识别":"本機語音辨識", "安装格式":"安裝格式", "自动更新":"自動更新", "支持":"支援", "暂不支持":"暫不支援", "加速":"加速", "其余硬件使用 CPU":"其他硬體使用 CPU", "自动使用":"自動使用", "本地运行环境":"本機執行環境", "软件内的「检查更新」":"軟體內的「檢查更新」", "Linux 用户首次仍需手动安装一次。":"Linux 使用者首次仍需手動安裝一次。", "当前版本未声明软件内自动更新平台，请从 GitHub Release 手动下载安装。":"目前版本未宣告軟體內自動更新平台，請從 GitHub Release 手動下載安裝。", "AppImage 首次运行前可能需要添加执行权限：":"AppImage 首次執行前可能需要新增執行權限："},
+  en: {"下载 EXE 安装程序":"Download EXE installer", "下载":"Download", "系统":"System", "推荐安装包":"Recommended installer", "其他格式":"Other formats", "适用设备":"Devices", "能力":"Platform", "本地语音识别":"Local transcription", "安装格式":"Package format", "自动更新":"Automatic updates", "暂不支持":"Unavailable", "支持":"Supported", "Apple Silicon 加速":"Apple Silicon acceleration", "NVIDIA 自动使用 CUDA/cuBLAS，其余硬件使用 CPU":"CUDA/cuBLAS on NVIDIA; CPU on other hardware", "whisper.cpp / 本地运行环境":"whisper.cpp / local runtime", "软件内的「检查更新」支持":"In-app update checks support", "Linux 用户首次仍需手动安装一次。":"Linux users must install manually the first time.", "当前版本未声明软件内自动更新平台，请从 GitHub Release 手动下载安装。":"No in-app updater platforms are declared for this release. Download an installer manually from GitHub Release.", "AppImage 首次运行前可能需要添加执行权限：":"Before the first AppImage launch, you may need to grant executable permission:"},
+};
+function localize(text) {
+  for (const [from, to] of Object.entries(vocabulary[language] || {}).sort((a,b) => b[0].length-a[0].length)) text = text.replaceAll(from,to);
+  return language === "en" ? text.replaceAll("、", ", ").replaceAll("。", ". ") : text;
+}
 
 const release = readJson(releaseFile);
 const latest = readJson(latestFile);
@@ -162,11 +173,11 @@ const linuxInstallHint = assets.appImage
 const replacements = {
   VERSION: version,
   SUPPORTED_PLATFORMS: platforms.join("、"),
-  DOWNLOAD_TABLE: downloadTable,
-  UPDATER_SENTENCE: updaterSentence,
-  RELEASE_NOTES: recentBlock(path.join(path.dirname(templateFile), "recent-features.json"), version),
-  PLATFORM_TABLE: platformTable,
-  LINUX_INSTALL_HINT: linuxInstallHint,
+  DOWNLOAD_TABLE: localize(downloadTable),
+  UPDATER_SENTENCE: localize(updaterSentence),
+  RELEASE_NOTES: recentBlock(path.join(path.dirname(templateFile), "recent-features.json"), version, language),
+  PLATFORM_TABLE: localize(platformTable),
+  LINUX_INSTALL_HINT: localize(linuxInstallHint),
 };
 
 let output = template;
@@ -178,6 +189,6 @@ if (unresolved) {
   throw new Error(`模板仍有未替换变量：${[...new Set(unresolved)].join(", ")}`);
 }
 
-validateReadme(output, readJson(path.join(path.dirname(templateFile), "readme-protection.json")).files["README.md"]);
+validateReadme(output, readJson(path.join(path.dirname(templateFile), "readme-protection.json")).files[readmeName]);
 fs.writeFileSync(outputFile, `${output.trimEnd()}\n`);
 console.log(`已生成 ${outputFile}：${tag}，${platforms.join("、")}`);

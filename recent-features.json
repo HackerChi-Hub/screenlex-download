@@ -21,5 +21,73 @@
       "version": "1.0.2",
       "text": "复习支持空格揭晓与数字键评分，弹窗支持 Esc，补齐键盘焦点提示。"
     }
-  ]
+  ],
+  "languages": {
+    "zh-CN": [
+      {
+        "version": "1.0.5",
+        "text": "首次提供 Linux x64 安装包，并支持 AppImage 自动更新。"
+      },
+      {
+        "version": "1.0.5",
+        "text": "新增自愿赞助入口，功能使用不受影响。"
+      },
+      {
+        "version": "1.0.4",
+        "text": "双击集数直接播放，右键可执行字幕体检、重跑字幕和恢复默认。"
+      },
+      {
+        "version": "1.0.4",
+        "text": "拖入电影文件夹即可设为影片目录并自动扫描。"
+      },
+      {
+        "version": "1.0.2",
+        "text": "复习支持空格揭晓与数字键评分，弹窗支持 Esc，补齐键盘焦点提示。"
+      }
+    ],
+    "zh-TW": [
+      {
+        "version": "1.0.5",
+        "text": "首次提供 Linux x64 安裝包，並支援 AppImage 自動更新。"
+      },
+      {
+        "version": "1.0.5",
+        "text": "新增自願贊助入口，功能使用不受影響。"
+      },
+      {
+        "version": "1.0.4",
+        "text": "雙擊集數直接播放，右鍵可執行字幕體檢、重跑字幕和恢復預設。"
+      },
+      {
+        "version": "1.0.4",
+        "text": "拖入電影資料夾即可設為影片目錄並自動掃描。"
+      },
+      {
+        "version": "1.0.2",
+        "text": "複習支援空格揭曉與數字鍵評分，彈窗支援 Esc，補齊鍵盤焦點提示。"
+      }
+    ],
+    "en": [
+      {
+        "version": "1.0.5",
+        "text": "Linux x64 installers are available for the first time, including automatic AppImage updates."
+      },
+      {
+        "version": "1.0.5",
+        "text": "Added an optional sponsorship entry without changing the main learning workflow."
+      },
+      {
+        "version": "1.0.4",
+        "text": "Double-click an episode to play it; the context menu offers subtitle checks, subtitle reruns and resetting defaults."
+      },
+      {
+        "version": "1.0.4",
+        "text": "Drag a movie folder into the app to set the media directory and start scanning automatically."
+      },
+      {
+        "version": "1.0.2",
+        "text": "Reveal review answers with Space, score them with number keys, close dialogs with Esc and see keyboard focus indicators."
+      }
+    ]
+  }
 }
