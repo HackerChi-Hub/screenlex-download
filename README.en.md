@@ -78,6 +78,7 @@ Dependencies and models stay in ScreenLex's private runtime directory. If setup 
 ScreenLex does not upload your films, subtitle content, learning entries, file paths or model API keys. Optional online AI explanations require a network connection; you can also configure a working LocalBrain endpoint for local-model explanations.
 <!-- evergreen:capabilities:end -->
 
+<!-- evergreen:screenshots:start -->
 ## Application screenshots
 
 Screenshots show the existing Chinese application interface; translated documentation does not imply that every UI label is translated.
@@ -85,6 +86,7 @@ Screenshots show the existing Chinese application interface; translated document
 ![Advanced vocabulary and word cards](screenshots/vocab-cards.png)
 
 ![Series and episode selector](screenshots/sidebar-batch.png)
+<!-- evergreen:screenshots:end -->
 
 ## Platform differences
 

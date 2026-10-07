@@ -31,7 +31,7 @@
 
 [官方网站](https://hyphentech.top) · [下载最新版](https://github.com/HackerChi-Hub/screenlex-download/releases/latest) · [B 站演示](https://www.bilibili.com/video/BV1HgjU6UEe8/) · [关注黑粉科技](https://space.bilibili.com/1846717524)
 
-![ScreenLex v{{VERSION}} 工作台](screenshots/overview.png)
+![ScreenLex 工作台（现有公开截图）](screenshots/overview.png)
 
 ## 下载
 
@@ -84,15 +84,17 @@
 - 不上传片源、字幕内容、学习词条、文件路径或模型 API Key。
 <!-- evergreen:capabilities:end -->
 
-## 最新版界面
+<!-- evergreen:screenshots:start -->
+## 实际界面
 
 ### 高级词汇工作台
 
-![ScreenLex v{{VERSION}} 高级词汇与词卡](screenshots/vocab-cards.png)
+![ScreenLex 高级词汇与词卡（现有公开截图）](screenshots/vocab-cards.png)
 
 ### 系列与视频选择器
 
-![ScreenLex v{{VERSION}} 系列与视频选择器](screenshots/sidebar-batch.png)
+![ScreenLex 系列与视频选择器（现有公开截图）](screenshots/sidebar-batch.png)
+<!-- evergreen:screenshots:end -->
 
 ## 平台差异
 

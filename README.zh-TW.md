@@ -39,7 +39,7 @@
 
 [官方網站](https://hyphentech.top) · [下載最新版](https://github.com/HackerChi-Hub/screenlex-download/releases/latest) · [B 站演示](https://www.bilibili.com/video/BV1HgjU6UEe8/) · [關注黑粉科技](https://space.bilibili.com/1846717524)
 
-![ScreenLex v1.0.5 工作臺](screenshots/overview.png)
+![ScreenLex 工作臺（現有公開截圖）](screenshots/overview.png)
 
 ## 下載
 
@@ -96,15 +96,17 @@
 - 不上傳片源、字幕內容、學習詞條、檔案路徑或模型 API Key。
 <!-- evergreen:capabilities:end -->
 
-## 最新版介面
+<!-- evergreen:screenshots:start -->
+## 實際介面
 
 ### 高階詞彙工作臺
 
-![ScreenLex v1.0.5 高階詞彙與詞卡](screenshots/vocab-cards.png)
+![ScreenLex 高階詞彙與詞卡（現有公開截圖）](screenshots/vocab-cards.png)
 
 ### 系列與影片選擇器
 
-![ScreenLex v1.0.5 系列與影片選擇器](screenshots/sidebar-batch.png)
+![ScreenLex 系列與影片選擇器（現有公開截圖）](screenshots/sidebar-batch.png)
+<!-- evergreen:screenshots:end -->
 
 ## 平臺差異
 
