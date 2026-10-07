@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { recentBlock, validateReadme } from "./readme-contract.mjs";
 
 import fs from "node:fs";
 import path from "node:path";
@@ -163,7 +164,7 @@ const replacements = {
   SUPPORTED_PLATFORMS: platforms.join("、"),
   DOWNLOAD_TABLE: downloadTable,
   UPDATER_SENTENCE: updaterSentence,
-  RELEASE_NOTES: releaseNotes(latest, release, version),
+  RELEASE_NOTES: recentBlock(path.join(path.dirname(templateFile), "recent-features.json"), version),
   PLATFORM_TABLE: platformTable,
   LINUX_INSTALL_HINT: linuxInstallHint,
 };
@@ -177,5 +178,6 @@ if (unresolved) {
   throw new Error(`模板仍有未替换变量：${[...new Set(unresolved)].join(", ")}`);
 }
 
+validateReadme(output, readJson(path.join(path.dirname(templateFile), "readme-protection.json")).files["README.md"]);
 fs.writeFileSync(outputFile, `${output.trimEnd()}\n`);
 console.log(`已生成 ${outputFile}：${tag}，${platforms.join("、")}`);

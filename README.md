@@ -1,13 +1,22 @@
-<!--
-此文件由 scripts/render-readme.mjs 根据 README.template.md、GitHub Release 资产和 latest.json 自动生成，
-请勿在 README.md 中直接维护版本号、下载链接、平台范围或更新说明。
--->
+<!-- evergreen:intro:start -->
+# 光影词库 ScreenLex · 看电影学英语、本地字幕查词与间隔复习
 
-# ScreenLex 光影词库
+**把本机电影、剧集和字幕，变成能播放原句、检索词汇、安排复习的英语学习系统。**
 
-> 把你本机已有的电影、剧集和字幕，变成一套可播放、可检索、可复习的高级英语学习系统。
+光影词库是黑粉科技开发的本地影视英语学习工具，面向美剧英语、电影英语和考试词汇学习。扫描自己的影视目录，识别英文或双语字幕，离线提取单词、短语和真实语境；用逐句播放、单句循环、主动回忆与间隔复习，把看过的表达留下来。支持 macOS、Windows 与 Linux，安装包以下载表为准。
 
-ScreenLex 是黑粉科技 HyphenTech 出品的本地影视英语学习工具。它会扫描你自己的影视目录，识别英文或双语字幕，离线提取值得学习的单词、短语和真实语境，再配合逐句播放器、主动回忆与间隔复习完成学习闭环。
+[**立即下载光影词库**](https://github.com/HackerChi-Hub/screenlex-download/releases/latest) · [B 站实际演示](https://www.bilibili.com/video/BV1HgjU6UEe8/) · [黑粉科技官网](https://hyphentech.top) · [反馈问题](https://github.com/HackerChi-Hub/screenlex-download/issues)
+<!-- evergreen:intro:end -->
+
+<!-- recent-features:start -->
+## 近期新增与改进（最近 5 项）
+
+- **1.0.5** · 首次提供 Linux x64 安装包，并支持 AppImage 自动更新。
+- **1.0.5** · 新增自愿赞助入口，功能使用不受影响。
+- **1.0.4** · 双击集数直接播放，右键可执行字幕体检、重跑字幕和恢复默认。
+- **1.0.4** · 拖入电影文件夹即可设为影片目录并自动扫描。
+- **1.0.2** · 复习支持空格揭晓与数字键评分，弹窗支持 Esc，补齐键盘焦点提示。
+<!-- recent-features:end -->
 
 **当前最新版：v1.0.5 · 支持 macOS Apple Silicon、Windows x64、Linux x64**
 
@@ -27,6 +36,7 @@ ScreenLex 是黑粉科技 HyphenTech 出品的本地影视英语学习工具。�
 
 软件内的「检查更新」支持 macOS、Windows、Linux AppImage。Linux 用户首次仍需手动安装一次。
 
+<!-- evergreen:capabilities:start -->
 ## 从安装到开始使用
 
 1. 安装并打开 ScreenLex。
@@ -67,6 +77,7 @@ ScreenLex 是黑粉科技 HyphenTech 出品的本地影视英语学习工具。�
 - 学习包、词库、复习记录和界面偏好保存在本地 SQLite 数据库；
 - 支持学习数据备份、恢复、缓存清理和全部记录清除；
 - 不上传片源、字幕内容、学习词条、文件路径或模型 API Key。
+<!-- evergreen:capabilities:end -->
 
 ## 最新版界面
 
@@ -77,11 +88,6 @@ ScreenLex 是黑粉科技 HyphenTech 出品的本地影视英语学习工具。�
 ### 系列与视频选择器
 
 ![ScreenLex v1.0.5 系列与视频选择器](screenshots/sidebar-batch.png)
-
-## v1.0.5 更新
-
-- 侧边栏新增赞助入口，点开是一张二维码，不打扰、不弹窗、不影响任何功能。
-- 首次提供 Linux x64 版本（AppImage / deb / rpm）。
 
 ## 平台差异
 
@@ -134,3 +140,43 @@ ScreenLex 不提供电影，不分发字幕资源，也不会上传你的片源�
 - [免责声明](./DISCLAIMER.md)
 
 ScreenLex 为闭源发布软件。本公开仓库只用于发布安装包、更新清单和使用说明，不包含应用源代码。
+
+<!-- evergreen:use-cases:start -->
+## 适合怎样的学习方式
+
+| 需求 | 使用方法 |
+| --- | --- |
+| 看美剧、电影学英语 | 用自己的影片与字幕建立词库，在原片时间点听到真实表达 |
+| 雅思、托福、四六级等词汇积累 | 按考试和学习标签筛选，再结合影视语境理解；标签不代表考试命中保证 |
+| 听力与口语跟读 | 逐句播放、单句循环、A-B 循环和倍速练习 |
+| 记住已经见过的生词 | 加入生词本，主动回忆并按间隔复习安排再见面 |
+
+## 常见问题
+
+**需要联网才能学英语吗？** 已有影片、字幕和所需本地环境后，可使用本地规则提词与学习；首次依赖、模型下载及可选在线 AI 精讲需要网络。
+
+**没有英文字幕怎么办？** 可配置 Whisper 本地语音识别补字幕。速度取决于模型、影片时长和硬件；macOS 使用 MLX Whisper，Windows 使用 whisper.cpp。
+
+**软件提供电影或字幕下载吗？** 不提供。需要准备自己合法拥有或获授权使用的本地影视和字幕。
+
+**能与方寸智匣配合吗？** 可以按设置接入 LocalBrain，使用自己的本地模型完成可选 AI 解释；先确认模型与接口可用。
+<!-- evergreen:use-cases:end -->
+
+<!-- evergreen:discovery:start -->
+## 黑粉科技自制软件
+
+按需求选用，也可以组合使用：本地模型交给方寸智匣，云端接口交给黑粉盒子，录制教程用黑粉录屏，影视英语学习用光影词库。
+
+| 软件 | 适合解决的问题 | 官方下载 |
+| --- | --- | --- |
+| 方寸智匣 LocalBrain | 本地大模型、文件与媒体工作台 | [下载方寸智匣](https://github.com/HackerChi-Hub/localbrain-releases) |
+| 黑粉录屏 HyphenScreen | 屏幕录制、教程剪辑、字幕与动画 | [下载黑粉录屏](https://github.com/HackerChi-Hub/HyphenScreen-Releases) |
+| 光影词库 ScreenLex | 看电影学英语、字幕查词、生词复习 | [下载光影词库](https://github.com/HackerChi-Hub/screenlex-download) |
+| 黑粉盒子 HyphenBox | 免费 AI API 发现、模型核验与统一接口 | [下载黑粉盒子](https://github.com/HackerChi-Hub/hyphenbox-release) |
+
+## 分享与反馈
+
+分享给朋友时，请复制本仓库首页或[官方网站](https://hyphentech.top)，让对方按自己的系统下载当前安装包。欢迎收藏仓库、点亮 Star，或在本仓库 Issues 提交使用体验、需求和脱敏问题。
+
+关注[哔哩哔哩「黑粉科技」](https://space.bilibili.com/1846717524)、[YouTube 黑粉科技频道](https://www.youtube.com/@hyphentech_top)；公众号和视频号搜索「黑粉科技」，查看实际演示与使用教程。
+<!-- evergreen:discovery:end -->
